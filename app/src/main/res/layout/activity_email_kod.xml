@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registr.EmailKod"
+    android:background="@color/fon">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/zagl"
+        android:text="Введите код из сообщения:"
+        android:textColor="@color/text"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/small"
+        android:textColor="@color/text"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Повторная отправка через 00:60" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/enterEMail1"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/enterEMail2"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/enterEMail3"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/enterEMail4"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black" />
+            <!-- Добавление двух новых полей для ввода кода -->
+            <EditText
+                android:id="@+id/enterEMail5"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/enterEMail6"
+                android:layout_width="45dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:fontFamily="@font/sfp_pro_display"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="@color/white"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

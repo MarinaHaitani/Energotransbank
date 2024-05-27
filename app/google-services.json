@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "458970374892",
+    "project_id": "energotransbank-20045",
+    "storage_bucket": "energotransbank-20045.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458970374892:android:72e5825ac20c0be26afbc9",
+        "android_client_info": {
+          "package_name": "com.example.energotransbank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLOHzAcYP2IXFL5MlhNl5qH4Y2T0_v6Lw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

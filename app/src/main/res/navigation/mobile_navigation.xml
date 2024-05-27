@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.energotransbank.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_transfers"
+        android:name="com.example.energotransbank.ui.transfers.TransfersFragment"
+        tools:layout="@layout/fragment_transfers" />
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.example.energotransbank.ui.history.HistoryFragment"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_support"
+        android:name="com.example.energotransbank.ui.support.SupportFragment"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.energotransbank.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_transfers" />
+</navigation>

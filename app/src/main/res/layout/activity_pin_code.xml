@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registr.Pin_code"
+    android:background="@color/fon">
+
+    <!-- Пин-код -->
+
+    <!-- Круглые маркеры для отображения заполненности пин-кода -->
+
+    <LinearLayout
+        android:id="@+id/keypad_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Верхний ряд кнопок -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="1"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="2"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:text="3"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Средний ряд кнопок -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="4"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="5"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:text="6"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Нижний ряд кнопок -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="7"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_button"
+                android:text="8"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:text="9"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <!-- Новый нижний ряд кнопок с кнопкой "0" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/round_button"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/ic_input_delete"
+                android:scaleType="centerInside"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginStart="10dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pinInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Придумайте код \n для входа в приложение"
+        android:fontFamily="@font/zagl"
+        android:textColor="@color/text"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pin_indicator_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/pin_indicator_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/keypad_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:id="@+id/circle1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_gray" />
+
+        <View
+            android:id="@+id/circle2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_gray" />
+
+        <View
+            android:id="@+id/circle3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/circle_gray" />
+
+        <View
+            android:id="@+id/circle4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_gray" />
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="@color/white"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

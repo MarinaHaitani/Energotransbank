@@ -1,0 +1,170 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fon"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/not_photo"
+        android:backgroundTint="@color/button"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <TextView
+        android:id="@+id/lastNameTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Фамилия"
+        android:textColor="@color/button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Last Name"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/lastNameTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <TextView
+        android:id="@+id/firstNameTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Имя"
+        android:textColor="@color/button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView1" />
+
+    <TextView
+        android:id="@+id/firstNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="First Name"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/firstNameTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameTextView" />
+
+    <TextView
+        android:id="@+id/patronymicTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Отчество"
+        android:textColor="@color/button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTextView1" />
+
+    <TextView
+        android:id="@+id/patronymicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Patronymic"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/patronymicTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameTextView" />
+
+    <TextView
+        android:id="@+id/dobTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Дата рождения"
+        android:textSize="18sp"
+        android:textColor="@color/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patronymicTextView1" />
+
+    <TextView
+        android:id="@+id/dobTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Date of Birth"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/dobTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/patronymicTextView" />
+
+    <TextView
+        android:id="@+id/genderTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Пол"
+        android:textColor="@color/button"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobTextView1" />
+
+    <TextView
+        android:id="@+id/genderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        android:textSize="18sp"
+        android:textColor="@color/text"
+        app:layout_constraintStart_toEndOf="@+id/genderTextView1"
+        app:layout_constraintTop_toBottomOf="@+id/dobTextView" />
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="?attr/actionModeCloseDrawable"
+        android:backgroundTint="@color/button"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logout"
+        android:backgroundTint="@color/button"
+        android:onClick="logOut"
+        android:scaleX="-1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

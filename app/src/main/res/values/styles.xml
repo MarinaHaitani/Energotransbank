@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonStyle" parent="android:TextAppearance.Widget.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="fontFamily">@font/lato</item>
+    </style>
+
+        <style name="CustomRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+            <item name="colorControlActivated">#7C2B25</item>
+            <item name="colorControlNormal">#7C2B25</item>
+            <item name="colorControlHighlight">#7C2B25</item>
+        </style>
+
+</resources>
